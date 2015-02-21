@@ -1,10 +1,10 @@
 world
-	name = "VER 1.0.1"
+	name = "VER 1.0.3"
 	view = 9
 	hub = "Ginseng.DungeonMaster"
 	version = 0.395
 	loop_checks  = 0
-	status = "Slimmshaneys Custom Verssion 1.0.1"
+	status = "Slimmshaneys Custom Verssion 1.0.3"
 
 	New()
 		log = file("ErrorLog.txt")
@@ -64,9 +64,6 @@ var/PlayerList = list()
 				D.icon_state = "Sun"
 				D.name = "Day"
 				D.text = "<font color=yellow>¤"
-			for(var/mob/Monsters/m in world)
-				if(m.SubRace == "Werewolf") m.WerewolfTransformation()
-				m.SunLight()
 	else
 		world << "<b><font color=blue>It Starts To Get Darker"
 		spawn(500)
@@ -347,6 +344,11 @@ mob/proc/Intro() //**********************Remember to carry "CanBeCaged" or whate
 		<b>NOTE</b>, # is one of the following keyboard buttons: 1,2,3,4,5,6,7,8, and 9. Also note that like all verbs in this game, you need "alt" on the macro bar for this to operate properly.<br>
 		<p>
 		<b>Updates:</b><p>
+		<p>Made Werewolfs be able to transform at lvl 65 at will.
+		<p>
+		<p>Added Naga as a playable Race
+		<p>Changed Rares Illithid - Svartalfar - Vampire - Demon
+		<p>
 		<p>Wing damage is no more. It may be readded if combat allows it in the future.
 		<p>Made bleed outs happen at much lower numbers, starting at 140 instead of 240.
 		<p>Fixed a fun little bug that was causing aging to not have a timer and was processing continually. Although I still question how the server didn't just crash.

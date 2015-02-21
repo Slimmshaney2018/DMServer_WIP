@@ -34,6 +34,7 @@ mob/proc/RebuildOverlays()
 	if(icon=='Lizardman.dmi') overlays += icon(icon,"Tail") //Over Everything else as to stick out. Both 'LizardMan.dmi' and 'LizardWoman.dmi' have the tail state.
 	if(CHILDMALE||CHILDFEMALE) if(!Egg) overlays += icon('Cave.dmi',"preg")
 	if("LizardEgg" in CoolDowns) overlays += icon('Cave.dmi',"preg")
+	if("NagaEgg" in CoolDowns) overlays += icon("Cave.dmi","preg")
 
 	if(Shielded&&Race!="Dragon") overlays += 'HolyShield.dmi'
 	if(OnFire) overlays += 'Fire.dmi'

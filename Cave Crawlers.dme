@@ -21,7 +21,6 @@
 
 // BEGIN_INCLUDE
 #include "Player.dm"
-#include "skin.dmf"
 #include "BackGrounds.dms"
 #include "Code\1 - Item Making.dm"
 #include "Code\1 - QuickProcs.dm"

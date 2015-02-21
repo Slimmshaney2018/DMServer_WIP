@@ -5825,16 +5825,18 @@ obj
 							if (Result == "Eat")
 								usr << "[M] shoves the diamond down its gullet and begins to digest it and gains a bonus 10 defence!"
 								M.Hunger = 100
-								if(M.SavedDefence < 150)
+								if(M.SavedDefence < 200)
 									M.Defence += 10
 									M.SavedDefence += 10
+								if(M.SavedDefence < 100)
+									M.MagicalAptitude += 1
 								else M.Owner << "You have gained over 150 defence from eating gems and can no longer gain further defense from eating them."
 								if(M.DropItem(src)) del(src)
 							if (Result == "Heal")
-								usr << "[M] uses a diamond's energy to heal the cracks and damages of their body. The absorbtion causes their body to become weaker and loses 10 points of defence."
+								usr << "[M] uses a diamond's energy to heal the cracks and damages of their body. The absorbtion causes their body to become weaker and loses 3 points of defence."
 								M.FullHeal(1)
-								M.Defence -= 10
-								M.SavedDefence -= 10
+								M.Defence -= 3
+								M.SavedDefence -= 3
 								if(M.DropItem(src)) del(src)
 							if (Result == "Drop") M.DropItem(src)
 			UnCutRuby

@@ -130,37 +130,37 @@ mob
 
 			Nose= "Good"
 
-			LeftEyeHP = 155
+			LeftEyeHP = 175
 
-			WingHP = 155
+			WingHP = 175
 
-			RightEyeHP = 155
+			RightEyeHP = 175
 
-			TeethHP = 155
+			TeethHP = 175
 
-			LeftArmHP = 155
+			LeftArmHP = 175
 
-			RightArmHP = 155
+			RightArmHP = 175
 
-			LeftLegHP = 155
+			LeftLegHP = 175
 
-			RightLegHP = 155
+			RightLegHP = 175
 
-			HeadHP = 155
+			HeadHP = 175
 
-			LeftEarHP = 155
+			LeftEarHP = 175
 
-			RightEarHP = 155
+			RightEarHP = 175
 
-			NoseHP = 155
+			NoseHP = 175
 
-			LeftArmMaxHP = 155
+			LeftArmMaxHP = 175
 
-			RightArmMaxHP = 155
+			RightArmMaxHP = 175
 
-			LeftLegMaxHP = 155
+			LeftLegMaxHP = 175
 
-			RightLegMaxHP = 155
+			RightLegMaxHP = 175
 
 			Bump(atom/m)
 				if(m == src.destination)

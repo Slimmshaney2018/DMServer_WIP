@@ -424,6 +424,16 @@ Admin/verb
 							S.x = usr.x; S.y = usr.y; S.z = usr.z; if(S.client) S.client.eye = S;
 							for(var/mob/Monsters/H in S.UnitList)
 								H.x = usr.x; H.y = usr.y; H.z = usr.z; if(H.client) H.client.eye = H;
+	z1ShootingStar()
+		set category="Admin"
+		spawn(300)
+		ExperienceMultiplier+=10
+		world << "<b><font color=yellow>A wonderful shooting star appears in the sky!"
+	z2ShootingStar()
+		set category="Admin"
+		spawn(300)
+		ExperienceMultiplier-=10
+		world << "<b><font color=yellow>The shooting star disappears from the sky!"
 	Watch(mob/M in world)
 		set category="Admin"
 		usr.client.eye = M

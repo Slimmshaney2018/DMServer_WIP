@@ -467,7 +467,7 @@ mob/verb/Interact() for(var/mob/Monsters/M in usr.Selected)
 					menu2 += "Turn Into Mist"
 					if(!M.DayWalker) if(M.Level >= 40) menu2 += "Become Daywalker"
 		if(M.SubRace == "Werewolf")
-			if(M.Level >= 50)
+			if(M.Level >= 65)
 				menu2 += "Transform"
 		if(M.HasWings)
 			if(M.Race == "Angel of Death" || M.Race == "Demon" || M.Race == "Gargoyle" || M.Race == "Vampire" || M.Race == "Angel") menu2 += "Retract Wings"

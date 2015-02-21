@@ -31,7 +31,7 @@ mob
 			CanKill = 1
 
 		LizardEgg
-			icon = 'LizardEgg.dmi'
+			icon = 'LizardEgg.dmi
 			density = 1
 			DieAge = 3000000
 			WearingFullPlateHelm = 1
@@ -45,6 +45,24 @@ mob
 				usr.Defence = rand(1,1)
 				usr.MAXHP = rand(50,100)
 				usr.HP = usr.MAXHP
+
+		NagaEgg
+			icon = 'NagaEgg.dmi'
+			density = 1
+			DieAge = 3000000
+			WearingFullPlateHelm = 1
+			Preg = 1
+			Egg = 1
+			LizardMan = 1
+			Humanoid = 1
+			New()
+				usr.Strength = rand(1,1)
+				usr.Agility = rand(1,1)
+				usr.Defence = rand(1,1)
+				usr.MAXHP = rand(50,100)
+				usr.HP = usr.MAXHP
+
+
 
 		SpiderEgg
 			icon = 'SpiderEgg.dmi'
