@@ -72,5 +72,6 @@
 #include "Maps\2-Underground.dmm"
 #include "Maps\3-Sky.dmm"
 #include "Maps\4-Hell.dmm"
+#include "Maps\5-Heaven.dmm"
 // END_INCLUDE
 
