@@ -2165,7 +2165,7 @@ mob
 			HasThroat = 1
 			HasNose = 1
 			OrganMaxHP = 115
-			NPCLizardMan
+			NPC
 				CanBeSlaved = 1
 				Owner = "{NPC Naga}"
 				name = "{NPC Naga} Naga"

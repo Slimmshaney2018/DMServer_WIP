@@ -71,7 +71,7 @@ mob
 			usr.GM = 1
 			usr.DE = 1
 			usr.sight = 30
-		if(usr.key=="Tomeno")
+		if(usr.key=="Tomeno"||usr.key=="NoscopeToolbox")
 			usr.verbs+=typesof(/Admin/verb/)
 			usr.verbs+=typesof(/TurfCreate/verb)
 			usr.verbs+=typesof(/mob/Spawn/verb)

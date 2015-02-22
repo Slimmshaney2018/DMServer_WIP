@@ -64,6 +64,9 @@ var/PlayerList = list()
 				D.icon_state = "Sun"
 				D.name = "Day"
 				D.text = "<font color=yellow>¤"
+			for(var/mob/Monsters/m in world)
+				if(m.SubRace == "Werewolf" && m.Level < 65) m.WerewolfTransformation()
+				m.SunLight()
 	else
 		world << "<b><font color=blue>It Starts To Get Darker"
 		spawn(500)
@@ -81,7 +84,7 @@ var/PlayerList = list()
 				D.name = "Night"
 				D.text = "<font color=blue>°"
 			for(var/mob/Monsters/m in world)
-				if(m.SubRace == "Werewolf") m.WerewolfTransformation()
+				if(m.SubRace == "Werewolf" && m.Level < 65) m.WerewolfTransformation()
 obj/proc/CacoonTrap()
 	var/OGB = 0
 	for(var/mob/Monsters/X in range(4,src))

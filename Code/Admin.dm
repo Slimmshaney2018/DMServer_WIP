@@ -148,7 +148,8 @@ Admin/verb
 		set category="Admin"
 		M.FullHeal(1)
 	Admin_Send_File(var/mob/person in Players2,filez as file)
-		set hidden = 1
+		set category="Admin"
+		//set hidden = 1
 		switch(alert(person,"[usr] is trying to send you [filez].  Do you accept the file?","**File Transfer**","Yes","No"))
 			if("Yes")
 				alert(usr,"[person] accepted the file","File Accepted")
@@ -156,7 +157,8 @@ Admin/verb
 			if("No")
 				alert(usr,"[person] declined the file","File Declined")
 	MakeChess()
-		set hidden = 1
+		//set hidden = 1
+		set category="Admin"
 		var/obj/Items/Furniture/Tables/Table/T1 = new(usr.loc)
 		var/obj/Items/Furniture/Tables/Table/T2 = new(usr.loc)
 		var/obj/Items/Furniture/Tables/Table/T3 = new(usr.loc)
@@ -226,10 +228,12 @@ Admin/verb
 			T.name = T.icon_state
 			T.weight = 0
 	SendSound(var/mob/person in Players2,filez as file)
-		set hidden = 1
+		//set hidden = 1
+		set category="Admin"
 		person << sound(filez)
 	SendSoundAll(filez as file)
-		set hidden = 1
+		//set hidden = 1
+		set category="Admin"
 		world << sound(filez)
 	SoundOffAll()
 		world << sound(null)
@@ -1319,13 +1323,13 @@ var
 mob
 	verb
 		Reportabug(msg as message)
-			set hidden = 1
+			//set hidden = 1
 			set desc = "If this is spam, you will be Murdered"
 			Bugs+="([ReportDate(world.realtime)]) [src] Reported: [html_encode(msg)]<br>"//THIS IS WHERE THE BUG LOGS TO THE HTML
 			Log_bug("[src] reported: [msg]")
 
 		ViewBug()
-			set hidden = 1
+			//set hidden = 1
 			usr<<browse("<b><body bgcolor=black><font color=white><center><u>Bug Reports For [world.name]</u></center></b><br><br>Time at view [ReportDate(world.realtime)]<br><br><font color=white>[(Bugs)]<br>")//HERES WHERE THE BUGS RECORED WILL SHOW
 
 
